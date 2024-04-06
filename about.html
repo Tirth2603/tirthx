@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Responsive Navbar | CodingNepal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="start"></div>
+    <nav id="nav">
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <label class="logo transform">tirth<span class="pur-web">x</span></label>
+      <ul id="menu">
+        <li>
+          <a href="/index.html#start" onclick="closeMobileMenu()">Home</a>
+        </li>
+        <li>
+          <a href="/index.html#services" onclick="closeMobileMenu()"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a href="/index.html#contactus" onclick="closeMobileMenu()"
+            >Contact</a
+          >
+        </li>
+        <li>
+          <a
+            class="chatbtn"
+            href="https://wa.me/+919023596082?text=Hello%20there!"
+            style="background-color: #5c45fd"
+            >Let's talk</a
+          >
+        </li>
+        <li onclick="lightmode(),closeMobileMenu()">
+          <img src="bulb-yellow.png" alt="" /><a id="l-bulb">LIGHT MODE</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="line"></div>
+    <div class="abouttitle">About us</div>
+    <div class="abtintro">
+      Empowering Businesses with Innovative Web Solutions
+    </div>
+    <div class="gap"></div>
+    <div class="abtintro1">
+      <p>
+        Welcome to tirthx, your trusted partner for exceptional web development
+        and design services. Since 2 year of establishment, we have been
+        dedicated to crafting remarkable online experiences that drive business
+        growth and success. At tirthx, we specialize in leveraging cutting-edge
+        web technologies to deliver custom solutions tailored to your unique
+        needs. Our team is passionate about transforming ideas into impactful
+        websites and applications that resonate with your audience.
+      </p>
+    </div>
+
+    
+    <hr>
+    <div class="abtothertitle">Our Core Focus</div>
+    <div class="abtdesc1">
+      <p><b class="pbc">Web Development Excellence: </b></p>
+      <p>
+        We excel in web technologies, specializing in creating dynamic and
+        user-friendly websites. Whether it's crafting bespoke web applications
+        or enhancing existing platforms, we ensure top-notch quality and
+        performance.
+      </p>
+      <br />
+      <b class="pbc">Design Innovation: </b>
+      <p>
+        Our creative designers blend aesthetics with functionality to deliver
+        captivating designs that reflect your brand identity. From responsive
+        layouts to engaging user interfaces, we elevate your online presence.
+      </p>
+      <br />
+      <b class="pbc">Client-Centric Approach: </b>
+      <p>
+        We prioritize our clients, understanding their goals and vision to
+        deliver tailored solutions. Your success is our mission, and we're
+        committed to exceeding your expectations.
+      </p>
+    </div>
+    <hr>
+    <div class="abtothertitle">Our Technology Stack</div>
+    <div class="abtdesc1">
+      <p><b class="pbc">Inovation and Creativity: </b></p>
+      <p>
+        We thrive on innovation, constantly exploring new technologies to
+        deliver cutting-edge solutions.
+      </p>
+      <br />
+      <b class="pbc">Frontend Mastery: </b>
+      <p>
+        Proficient in HTML5, CSS3, JavaScript, and modern frameworks like React
+        and Next.js, we create immersive and responsive web interfaces.
+      </p>
+      <br />
+      <b class="pbc">Backend Expertise: </b>
+      <p>
+        Skilled in Node.js,Express and databases like MySQL and MongoDB,
+        we develop robust backend systems to power your applications.
+      </p>
+      <br />
+      <b class="pbc">E-commerce Solutions: </b>
+      <p>
+        We specialize in crafting secure and scalable e-commerce platforms
+      </p>
+    </div>
+    
+    <hr>
+    <div class="abtothertitle">Why Choose tirthx?</div>
+    <div class="abtdesc1">
+      <p><b class="pbc">Inovation and Creativity: </b></p>
+      <p>
+        We thrive on innovation, constantly exploring new technologies to
+        deliver cutting-edge solutions.
+      </p>
+      <br />
+      <b class="pbc">Affordable Pricing: </b>
+      <p>
+        Our services are competitively priced, making quality web development
+        accessible to businesses of all sizes.
+      </p>
+      <br />
+      <b class="pbc">Proven Track Record: </b>
+      <p>
+        With 2+ years of experience and 10+ successful projects, we have
+        established ourselves as a reliable partner in the industry.
+      </p>
+      <b class="pbc">Client Satisfaction: </b>
+      <p>
+        Your satisfaction is our priority. We work closely with you throughout
+        the project lifecycle to ensure your vision is realized.
+      </p>
+    </div>
+
+    <hr>
+    <div class="abtothertitle">Our Commitment</div>
+    <div class="abtdesc1">
+      <p>
+        tirthx is committed to excellence in every project we undertake. Whether
+        you're a startup or an established enterprise, we are here to transform
+        your digital presence and propel your business forward.
+      </p>
+      <br />
+      <p>
+        <a href="/index.html#contactus" style="text-decoration: underline"
+          >Contact us</a
+        >
+        today to embark on a journey of digital transformation with TirthX.
+        Let's create something extraordinary together.
+      </p>
+    </div>
+
+
+
+
+
+    <div class="line"></div>
+    <!-- ========== ===== ===== footer ==== ==== ==== ====== -->
+    <div class="footer">
+        <div class="fcname">
+          <a href="/index.html#start"
+            ><span style="font-weight: bold"
+              >tirth<span class="pur-web">x</span></span
+            ></a
+          >
+        </div>
+        <div class="grid-container">
+          <div class="column">
+            <p class="ch">Let's Connect</p>
+            <div class="exmargin"></div>
+            <a href="https://www.google.com/maps/search/?api=1&query=Ahmedabad"
+              ><p class="cd">Ahmedabad, India</p></a
+            >
+            <a href="tel:+919023596082"><p class="cd">+91 9023596082</p></a>
+            <a href="mailto:tirthshrimali26@example.com"
+              ><p class="cd">tirthshrimali26@gmail.com</p></a
+            >
+          </div>
+          <div class="column">
+            <p class="ch">Links</p>
+            <div class="exmargin"></div>
+            <a href="/index.html#start"><p class="cd">Home</p></a>
+            <a href=""><p class="cd">Why us?</p></a>
+            <a href="/index.html#services"><p class="cd">Services</p></a>
+            <a href=""><p class="cd">Privacy Policy</p></a>
+          </div>
+          <div class="column iconcol">
+            <p class="ch">Follow Us</p>
+            <div class="exm2"></div>
+            <div class="ficond">
+              <div class="ficon">
+                <a href="https://www.instagram.com/tirths26"
+                  ><img src="instagram.png" alt="" srcset=""
+                /></a>
+              </div>
+              <div class="ficon">
+                <a href="https://www.linkedin.com/in/tirth-shrimali-917113219/"
+                  ><img src="linkedin.png" alt="" srcset=""
+                /></a>
+              </div>
+              <div class="ficon">
+                <a href="https://github.com/tirth2603"
+                  ><img src="github.png" alt="" srcset=""
+                /></a>
+              </div>
+              <div class="ficon">
+                <a href="https://www.youtube.com/@TirthTech"
+                  ><img src="youtube.png" alt="" srcset=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="script.js"></script>
+  </body>
+</html>

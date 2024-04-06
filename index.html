@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Responsive Navbar | CodingNepal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="start"></div>
+    <nav id="nav">
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <label class="logo transform">tirth<span class="pur-web">x</span></label>
+      <ul id="menu">
+        <li><a href="#start" onclick="closeMobileMenu()">Home</a></li>
+        <li><a href="/about.html" onclick="closeMobileMenu()">About</a></li>
+        <li><a href="#services" onclick="closeMobileMenu()">Services</a></li>
+        <li><a href="#contactus" onclick="closeMobileMenu()">Contact</a></li>
+        <li>
+          <a
+            class="chatbtn"
+            href="https://wa.me/+919023596082?text=Hello%20there!"
+            style="background-color: #5c45fd"
+            >Let's talk</a
+          >
+        </li>
+        <li onclick="lightmode(),closeMobileMenu()">
+          <img src="bulb-yellow.png" alt="" /><a id="l-bulb">LIGHT MODE</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="intro">
+      <div class="intro1">
+        We develop <br />amazing <span class="pur-web">websites</span> <br />for
+        your business<span class="pur-web" style="font-size: 5rem">.</span>
+      </div>
+
+      <div class="intro2">
+        Discover our seamless workflow as we transform Figma design into
+        stunning Webflow Websites. Explore the synergy between design and
+        development for a pixel-perfect online experience.
+      </div>
+
+      <div class="intro3">
+        <button class="viewworkbtn">View Work</button>
+
+        <img src="custlogo.png" alt="" />
+        <div class="intro3last">
+          <p><b>10+</b></p>
+          <p>satisfied customers</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="main">
+      <div class="maint1">
+        <span class="pur-web">Exceeding Expectations</span>
+      </div>
+      <div class="maint1a">
+        Small business websites without the huge expense.
+      </div>
+      <div class="maint2">
+        We're more than just an agency, we're your pathway to exceptional web
+        projects. Our goal is to help you get online swiftly and affordably,
+        without any surprises. With a focus on personalized care, we specialize
+        in creating striking, mobile-friendly websites for individuals, small
+        businesses, and e-commerce ventures. As fellow small business owners, we
+        understand the importance of a strong online presence and relish the
+        opportunity to collaborate with you. Let's build something extraordinary
+        together.
+      </div>
+      <br /><br /><br />
+
+      <hr />
+
+      <div class="htitle" id="services"><span>Services</span></div>
+      <div class="cards">
+        <div class="card">
+          <div class="cardtxt">
+            <div class="cticon">
+              <img src="seo.png" alt="" />
+            </div>
+            <div class="cttitle">Search Engine Optimization (SEO)</div>
+            <div class="cttext">
+              Unlock the full potential of your online presence with our
+              comprehensive SEO solutions. Our expert team employs cutting-edge
+              strategies to enhance your website's visibility and drive organic
+              traffic. Elevate your digital footprint and stay ahead of the
+              competition with our tailored SEO services.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardtxt">
+            <div class="cticon">
+              <img src="responsive-design.png" alt="" />
+            </div>
+            <div class="cttitle">Mobile and Tablet Responsive Design</div>
+            <div class="cttext">
+              Ensure seamless user experience across all devices with our mobile
+              and tablet responsive design services. Reach your audience
+              wherever they are and make a lasting impression with our
+              responsive web solutions.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardtxt">
+            <div class="cticon">
+              <img src="design.png" alt="" />
+            </div>
+            <div class="cttitle">Custom Web Development</div>
+            <div class="cttext">
+              Empower your online presence with bespoke websites engineered to
+              reflect your vision with precision. Experience unparalleled
+              customization, ensuring your brand shines with flexibility. Let us
+              transform your ideas into captivating digital experiences that
+              make a lasting impact.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardtxt">
+            <div class="cticon">
+              <img src="customer-service.png" alt="" />
+            </div>
+            <div class="cttitle">Dedicated Customer Support</div>
+            <div class="cttext">
+              Count on our dedicated customer support team based in India to
+              provide you with prompt and professional assistance. We're
+              committed to serving your needs with expertise and reliability,
+              fostering a relationship built on trust and mutual respect.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardtxt">
+            <div class="cticon">
+              <img src="update.png" alt="" />
+            </div>
+            <div class="cttitle">Continuous Improvement Initiatives</div>
+            <div class="cttext">
+              Dedicated to your satisfaction, we continuously refine our
+              services based on your feedback. Stay ahead with timely updates,
+              ensuring your experience evolves alongside your needs. Trust in
+              our commitment to excellence for enduring partnerships built on
+              trust and value.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardtxt">
+            <div class="cticon">
+              <img src="delivery-man.png" alt="" />
+            </div>
+            <div class="cttitle">Timely Delivery Assurance</div>
+            <div class="cttext">
+              Our commitment to punctuality ensures your projects are completed
+              promptly, meeting your deadlines without compromise. With our
+              streamlined processes and dedicated team, rest assured your
+              timelines will be respected and honored.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br />
+    <hr />
+
+    <div class="htitle" id="contactus"><span>Contact Us </span></div>
+    <div class="formmain">
+      <div class="formimg"><img src="message.png" /></div>
+      <div class="form">
+        <form action="https://formspree.io/f/mleqpgjy" method="POST">
+          <label>
+            <input type="text" name="name" placeholder="&#128100; Name" required/>
+          </label>
+          <label>
+            <input type="email" name="email" placeholder="&#x2709; Email" required/>
+            <!-- &#x1F4E7; -->
+          </label>
+
+          <label>
+            <textarea name="message" placeholder="Message..." required></textarea>
+          </label>
+          <!-- your other form fields go here -->
+          <button type="submit" id="send-btn">Send</button>
+        </form>
+      </div>
+    </div>
+    <br>
+    <hr />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="fcname">
+        <a href="#start"
+          ><span style="font-weight: bold"
+            >tirth<span class="pur-web">x</span></span
+          ></a
+        >
+      </div>
+      <div class="grid-container">
+        <div class="column">
+          <p class="ch">Let's Connect</p>
+          <div class="exmargin"></div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Ahmedabad"
+            ><p class="cd">Ahmedabad, India</p></a
+          >
+          <a href="tel:+919023596082"><p class="cd">+91 9023596082</p></a>
+          <a href="mailto:tirthshrimali26@example.com"
+            ><p class="cd">tirthshrimali26@gmail.com</p></a
+          >
+        </div>
+        <div class="column">
+          <p class="ch">Links</p>
+          <div class="exmargin"></div>
+          <a href="#start"><p class="cd">Home</p></a>
+          <a href=""><p class="cd">Why us?</p></a>
+          <a href="#services"><p class="cd">Services</p></a>
+          <a href=""><p class="cd">Privacy Policy</p></a>
+        </div>
+        <div class="column iconcol">
+          <p class="ch">Follow Us</p>
+          <div class="exm2"></div>
+          <div class="ficond">
+            <div class="ficon">
+              <a href="https://www.instagram.com/tirths26"
+                ><img src="instagram.png" alt="" srcset=""
+              /></a>
+            </div>
+            <div class="ficon">
+              <a href="https://www.linkedin.com/in/tirth-shrimali-917113219/"
+                ><img src="linkedin.png" alt="" srcset=""
+              /></a>
+            </div>
+            <div class="ficon">
+              <a href="https://github.com/tirth2603"
+                ><img src="github.png" alt="" srcset=""
+              /></a>
+            </div>
+            <div class="ficon">
+              <a href="https://www.youtube.com/@TirthTech"
+                ><img src="youtube.png" alt="" srcset=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
